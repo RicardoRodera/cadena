@@ -37,4 +37,9 @@ class CadenaTest {
 	void testInvertir() {
 		assertEquals("oniügniP", cadena.invertir("Pingüino"));
 	}
+	
+	@Test
+	void testContarLetra() {
+		assertEquals(2, cadena.contarLetra("Pingüino", 'n'));
+	}
 }
