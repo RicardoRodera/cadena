@@ -17,5 +17,19 @@ class CadenaTest {
 	void testLongitudCadenaLarga() {
 		assertEquals(28, cadena.longitud(" Esta prueba tiene espacios."));
 	}
+	
+	@Test
+	void testVocales() {
+		assertEquals(2, cadena.vocales("hola"));
+	}
 
+	@Test
+	void testVocalesConTildesYMayusculas() {
+		assertEquals(4, cadena.vocales("hOla camión"));
+	}
+	
+	@Test
+	void testVocalesConDieresis() {
+		assertEquals(4, cadena.vocales("Pingüino"));
+	}
 }
