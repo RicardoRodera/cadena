@@ -32,4 +32,9 @@ class CadenaTest {
 	void testVocalesConDieresis() {
 		assertEquals(4, cadena.vocales("Pingüino"));
 	}
+	
+	@Test
+	void testInvertir() {
+		assertEquals("oniügniP", cadena.invertir("Pingüino"));
+	}
 }
